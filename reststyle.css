@@ -1,0 +1,44 @@
+body {
+  font-family: 'Dancing Script', cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+.banner {
+  height: 6in;
+  border: 1px solid black;
+  background-image: url('restaurant.jpg');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;   
+}
+
+.banner::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  background-color: rgba(124, 86, 15, 0.6);
+}
+
+.banner h3{
+  z-index: 1;
+  margin-top: 300px;
+  padding: 10px 25px;
+  border: 3px solid white;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+}
